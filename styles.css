@@ -1,0 +1,204 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto; /* Margin around the container */
+    padding: 20px; /* Padding inside the container */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background: #007bff;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#connectWallet
+{
+    background: #28a745;
+}
+
+#connectWallet:hover {
+    background: #218838;
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+#splitAmount {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px; 
+    font-size: 16px; 
+    color: #333; 
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+}
+
+#splitAmount:focus {
+    border-color: #0056b3; /* Change border color on focus */
+    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.2); /* Enhance the shadow on focus */
+    outline: none; /* Remove the default outline */
+}
+
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Address Row Styles */
+.address-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.address-row label {
+    margin-right: 10px;
+    flex-basis: 150px;
+    font-weight: normal;
+}
+
+.address-row input {
+    flex: 1;
+}
+
+.remove-row-btn {
+    background: #dc3545;
+    border: none;
+    color: white;
+    width: 40px;   /* Set the width */
+    height: 40px;  /* Set the height to match the width */
+    cursor: pointer;
+    border-radius: 50%;  /* Make it circular */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 0;  /* Remove padding to keep it circular */
+}
+
+
+.remove-row-btn:hover {
+    background: #c82333;
+}
+
+.amountsContainer-cell{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.amountsContainer-cell .address-col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+#walletInfo {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Dynamic Form Row Styles */
+#recipientsContainer,
+#amountsContainer {
+    margin-bottom: 20px;
+}
+
+#recipientsContainer .address-row,
+#amountsContainer .address-row {
+    margin-bottom: 10px;
+}
+
+#recipientsContainer button,
+#amountsContainer button {
+    margin-top: 10px;
+}
+
+
+#action-button
+{
+    background: #28a745;
+}
+
+#action-button:hover {
+    background: #218838;
+}
